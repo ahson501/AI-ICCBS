@@ -1,0 +1,19 @@
+FROM python:3.7-slim as production
+
+ENV PYTHONBUFFERED=1
+WORKDIR /app/
+
+COPY requirements/prod.txt ./requirements/prod.txt
+RUN pip install -r ./requirements/prod.txt
+
+COPY manage.py ./manage.py
+COPY AI_ICCBS_website ./AI_ICCBS_website
+
+EXPOSE 8000
+
+FROM production as development
+
+COPY requirements/dev.txt ./requirements/dev.txt
+RUN pip install -r ./requirements/dev.txt
+
+COPY ..

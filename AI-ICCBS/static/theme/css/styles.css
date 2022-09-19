@@ -2193,7 +2193,7 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #495097;
   background-color: #fff;
   background-clip: padding-box;
   border: 0.125rem solid #ced4da;
@@ -2318,8 +2318,8 @@ progress {
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
-  background-color: transparent;
+  color: #495057;
+  background-color: #fff;
   border: solid transparent;
   border-width: 0.125rem 0;
 }
@@ -2488,8 +2488,8 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+     -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -2645,7 +2645,7 @@ textarea.form-control-lg {
   height: 0.5rem;
   color: transparent;
   cursor: pointer;
-  background-color: #dee2e6;
+  background-color: #0a4d91;
   border-color: transparent;
   border-radius: 1rem;
 }

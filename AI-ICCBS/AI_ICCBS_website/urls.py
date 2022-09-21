@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('AI_ICCBS_website.apps.public.urls')),
     path('accounts/', include('AI_ICCBS_website.apps.accounts.urls')),
-    path('about', views.about, name='about'),
-    path('contact', views.contact, name='contact')
-]
+ ]
+  
+

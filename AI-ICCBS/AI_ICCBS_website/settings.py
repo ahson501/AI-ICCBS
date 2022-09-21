@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',  
 ]
 
 MIDDLEWARE = [
@@ -74,12 +74,22 @@ WSGI_APPLICATION = 'AI_ICCBS_website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+POSTGRES_HOST = os.environ.get("POSTGRES_HOST", default="")
+POSTGRES_DB = os.environ.get("POSTGRES_DB", default="")
+POSTGRES_USER = os.environ.get("POSTGRES_USER", default="")
+POSTGRES_PASSWORD = os.environ.get("POSTGRES_PASSWORD", default="")
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+'default': {
+'ENGINE': 'django.db.backends.postgresql',
+'NAME': POSTGRES_DB,
+'USER': POSTGRES_USER,
+'PASSWORD': POSTGRES_PASSWORD,
+'HOST': POSTGRES_HOST,
+'PORT': 5432,
+ }
 }
+
 
 
 # Password validation
@@ -122,6 +132,12 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+# Django Auth Settings
+LOGIN_URL = 'account:login'
+LOGIN_REDIRECT_URL = 'public:index'
+LOGOUT_REDIRECT_URL = 'public:index'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

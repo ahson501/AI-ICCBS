@@ -25,7 +25,7 @@
             Interests:
             {% for interest in profile.interests.all %}
                 <span>
-                    {{ interest.name }}{% if not forloop.last %}, {% endif %}}
+                    {{ interest.name }}{% if not forloop.last %}, {% endif %}
                 </span>
             {% endfor %}    
         </div>

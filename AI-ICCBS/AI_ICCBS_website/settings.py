@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',  
+    'django.contrib.staticfiles', 
+    'AI_ICCBS_website.apps.accounts',
+    'AI_ICCBS_website.apps.contact',
 ]
 
 MIDDLEWARE = [
@@ -74,21 +76,22 @@ WSGI_APPLICATION = 'AI_ICCBS_website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-POSTGRES_HOST = os.environ.get("POSTGRES_HOST", default="")
-POSTGRES_DB = os.environ.get("POSTGRES_DB", default="")
-POSTGRES_USER = os.environ.get("POSTGRES_USER", default="")
-POSTGRES_PASSWORD = os.environ.get("POSTGRES_PASSWORD", default="")
+
+POSTGRES_HOST = os.environ.get('POSTGRES_HOST', default="")
+POSTGRES_DB = os.environ.get('POSTGRES_DB', default="")
+POSTGRES_USER = os.environ.get('POSTGRES_USER', default="")
+POSTGRES_PASSWORD = os.environ.get('POSTGRES_PASSWORD', default="")
 
 DATABASES = {
-'default': {
-'ENGINE': 'django.db.backends.postgresql',
-'NAME': POSTGRES_DB,
-'USER': POSTGRES_USER,
-'PASSWORD': POSTGRES_PASSWORD,
-'HOST': POSTGRES_HOST,
-'PORT': 5432,
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'postgres',
+       'USER': 'postgres',
+       'PASSWORD': 'postgres',
+       'HOST': 'postgres',
+       'PORT': '5432',
+    }
  }
-}
 
 
 

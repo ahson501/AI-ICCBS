@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-interests = request.user.profile.interests.all()
 
 class UserInterest(models.Model):
     name = models.CharField(max_length=64, unique=True)
@@ -29,5 +28,5 @@ class UserProfile(models.Model):
 #details
 bio = models.CharField(max_length=500, blank=True, null=True)
 website = models.URLField(max_length=200, blank=True, null=True) 
-persona = models.ForiegnKey(UserPersona, on_delete=models.SET_NULL, blank=True, null=True)
+persona = models.ForeignKey(UserPersona, on_delete=models.SET_NULL, blank=True, null=True)
 interests = models.ManyToManyField(UserInterest, blank=True)

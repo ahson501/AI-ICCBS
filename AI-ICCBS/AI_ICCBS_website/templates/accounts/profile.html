@@ -1,9 +1,9 @@
-{% load static %}
+{% extends 'base.html'%}
 
 {% block title %}Profile{% endblock %}
 
 {% block head %}
-<link href="{% static 'css/profile.css' %}" rel="stylesheet" />
+<link href="{% url 'css/profile.css' %}" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
@@ -43,4 +43,5 @@
             </div>
         </div>
     </div>
-        
+   {% endwith %}     
+   {% endblock %}

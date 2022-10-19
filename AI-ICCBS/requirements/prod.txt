@@ -1,3 +1,4 @@
 Django==3.2.15
 psycopg2==2.8.4
 bleach==4.1.0
+django_ckeditor==6.0.0

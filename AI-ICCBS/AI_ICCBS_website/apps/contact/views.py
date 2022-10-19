@@ -34,5 +34,6 @@ def contact(request: HttpRequest) -> HttpResponse:
     return render(request, 'contact.html', {"form": form})
 
     
+    
 
     

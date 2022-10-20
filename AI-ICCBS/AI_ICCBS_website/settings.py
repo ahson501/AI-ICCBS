@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'AI_ICCBS_website.apps.accounts',
     'AI_ICCBS_website.apps.contact',
     'AI_ICCBS_website.apps.blog'
+    
 ]
 
 MIDDLEWARE = [
@@ -136,6 +137,7 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
 
 # Django Auth Settings
 LOGIN_URL = 'account:login'

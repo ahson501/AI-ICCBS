@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles', 
     'AI_ICCBS_website.apps.accounts',
     'AI_ICCBS_website.apps.contact',
-    'AI_ICCBS_website.apps.blog'
+    'AI_ICCBS_website.apps.blog',
     
 ]
 

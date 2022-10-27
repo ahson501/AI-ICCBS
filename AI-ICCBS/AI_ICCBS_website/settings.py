@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'AI_ICCBS_website.apps.accounts',
     'AI_ICCBS_website.apps.contact',
     'AI_ICCBS_website.apps.blog',
-    
+    'ckeditor'    
 ]
 
 MIDDLEWARE = [

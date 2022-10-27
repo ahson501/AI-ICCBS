@@ -43,23 +43,23 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="{% static 'img/AICCBS.png' %}" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>TECHNOLOGY PARK</h5>
-                <p>Business startup ventures from different sectors</p>
+            <div class="carousel-caption d-none d-md-block", style="text-align: center; color:#f00000">
+                <h1><strong>TECHNOLOGY PARK</strong></h1>
+                <p><strong>Business startup ventures from different sectors</strong></p>
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="{% static 'img/deep.png' %}" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>TRAIN YOUR TENSORFLOW MODEL</h5>
-                <p>utilize ICCBS GPUs with ML Tools</p>
+            <div class="carousel-caption d-none d-md-block", style="text-align: center; color:#f00000">
+                <h1><strong>TRAIN YOUR TENSORFLOW MODEL</strong></h1>
+                <p><strong>utilize ICCBS GPUs with ML Tools</strong></p>
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="{% static 'img/GRAFANA_ICCBS.png' %}" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block", style="text-align: right; color:rgb(146, 52, 155)">
-                <h5>EXPERIENCE THE TRUE GPU INSTRUMENTATION</h5>
-                <p>Monitoring, Logging, Versioning, Emailing & More!</p>
+            <div class="carousel-caption d-none d-md-block", style="text-align: center ; color:#f00000">
+                <h1><strong>EXPERIENCE ICCBS-GPU INSTRUMENTATION</strong></h1>
+                <p><strong>Monitoring, Logging, Versioning, Emailing & More!</strong></p>
             </div>
         </div>
     </div>
@@ -102,11 +102,50 @@
             box-shadow: 0 16px 48px #E3E7EB;
             padding-top: 10px;
         }
+        h1 {
+        display: block;
+        font-size: 5em;
+        margin-top: 0.57em;
+        margin-bottom: 0.1em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+}
+
     </style>
 
         {% endblock %}
 
 
+
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card card-1">
+                  <h3>Ionic Native</h3>
+                  <p>A curated set of   ES5/ES6/TypeScript wrappers for plugins to easily add any native functionality to your Ionic apps.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-2">
+                  <h3>UI Components</h3>
+                  <p>Tabs, buttons, inputs, lists, cards, and more! A comprehensive library
+                    of mobile UI components, ready to go.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-3">
+                  <h3>Theming</h3>
+                  <p>Learn how to easily customize and modify your app’s design to fit your
+                    brand across all mobile platform styles.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          Run Pen
+          
+          
 
 <style>
         .card{
@@ -115,6 +154,66 @@
 
 </style>
 
+<style>
+body{
+    font-family: 'Nunito', sans-serif;
+    padding: 50px;
+  }
+  .card{
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+  }
+  
+  .card:hover{
+       transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  
+  .card h3{
+    font-weight: 600;
+  }
+  
+  .card img{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    max-height: 120px;
+  }
+  
+  .card-1{
+    background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  .card-2{
+     background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  .card-3{
+     background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+        background-repeat: no-repeat;
+      background-position: right;
+      background-size: 80px;
+  }
+  
+  @media(max-width: 990px){
+    .card{
+      margin: 20px;
+    }
+  } 
+</style>
+  Run Pen
+  
+  
 
 
 <!-- Sidebar Widgets Column -->

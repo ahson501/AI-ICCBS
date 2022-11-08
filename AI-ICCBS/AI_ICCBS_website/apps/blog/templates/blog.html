@@ -122,31 +122,24 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="card card-1">
-                  <h3>Ionic Native</h3>
-                  <p>A curated set of   ES5/ES6/TypeScript wrappers for plugins to easily add any native functionality to your Ionic apps.</p>
+                  <h3>Write for Us!</h3>
+                  <p>we invite you to write for us about different topics. Your texts can be published in our blogs or in any other format of our web page .</p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="card card-2">
-                  <h3>UI Components</h3>
-                  <p>Tabs, buttons, inputs, lists, cards, and more! A comprehensive library
-                    of mobile UI components, ready to go.</p>
+                  <h3>Test our ready AI Components</h3>
+                  <p>Python, Anaconda, Tensorflow, Spyder, Matlab, & much more... ready to go.</p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="card card-3">
-                  <h3>Theming</h3>
-                  <p>Learn how to easily customize and modify your app’s design to fit your
-                    brand across all mobile platform styles.</p>
+                  <h3>Our Objective</h3>
+                  <p>To provide a common platform for growth-oriented technology entrepreneurs to access resources, mentorship, and space to start and grow their ventures and to graduate from incubation space into commercial space in the Pakistan Industry.</p>
                 </div>
               </div>
             </div>
           </div>
-          
-          Run Pen
-          
-          
-
 <style>
         .card{
             box-shadow: 0 16px 48px #E3E7EB;
@@ -189,6 +182,7 @@ body{
         background-repeat: no-repeat;
       background-position: right;
       background-size: 80px;
+      background-color: #68a4f1;
   }
   
   .card-2{
@@ -196,6 +190,7 @@ body{
         background-repeat: no-repeat;
       background-position: right;
       background-size: 80px;
+      background-color:#68a4f1;
   }
   
   .card-3{
@@ -203,6 +198,7 @@ body{
         background-repeat: no-repeat;
       background-position: right;
       background-size: 80px;
+      background-color: #68a4f1;
   }
   
   @media(max-width: 990px){
@@ -211,11 +207,8 @@ body{
     }
   } 
 </style>
-  Run Pen
   
   
-
-
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4 float-right ">
 <div class="card my-4">
@@ -229,13 +222,13 @@ body{
     </div>
 </div>
 </div>
-
-
-
 </html>
 
 
-  <header class="masthead">
+
+
+
+<header class="masthead">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -258,7 +251,7 @@ body{
                 <div class="card-body">
                     <h2 class="card-title">{{ post.title }}</h2>
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|slice:":200" }}</p>
+                    <p class="card-text">{{post.content|safe|slice:":200" }}</p>
                     <a href="{% url 'blog:post_detail' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
                 </div>
             </div>

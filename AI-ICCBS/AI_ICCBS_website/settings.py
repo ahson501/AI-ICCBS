@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-t&=ph4ggr+&h8h7!q@ax_@_77gftdbe9^k)spaxfbfw&)pu9m^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['', '172.16.2.35']
+ALLOWED_HOSTS = ['', '172.16.2.35', '111.68.111.222']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'AI_ICCBS_website.apps.accounts',
     'AI_ICCBS_website.apps.contact',
     'AI_ICCBS_website.apps.blog',
+    'AI_ICCBS_website.apps.ticketApp',
     'ckeditor',
     'django_filters',
     'rest_framework',
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     'crispy_forms', 
     
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -127,7 +129,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Karachi'
 
 USE_I18N = True
 

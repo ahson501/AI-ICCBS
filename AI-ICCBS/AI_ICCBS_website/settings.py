@@ -47,8 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'taggit',
     'ckeditor_uploader',
-    'crispy_forms', 
-    
+    'crispy_forms',    
 ]
 
 

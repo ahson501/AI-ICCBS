@@ -5,4 +5,3 @@ django_ckeditor==6.0.0
 pillow==9.3.0
 django-bona-blog==1.1.4
 
-
